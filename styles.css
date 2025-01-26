@@ -32,83 +32,85 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-.income,
-.expense,
-.total,
-.debt {
-  width: 65%;
-  font-size: 30px;
-  padding-left: 10px;
-  border: 0.5px solid cornsilk;
-  box-shadow: 0 0 2px cornsilk, 0 0 4px cornsilk, 0 0 8px cornsilk,
-    0 0 14px cornsilk;
+.sect_part_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  border: 0.5px solid black;
+  box-shadow: 0 0 2px gray, 0 0 4px gray, 0 0 8px gray, 0 0 14px gray;
+  margin: 10px;
 }
-.income {
-  color: chartreuse;
+.income_txt {
+  color: #7fff00;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
+  margin: 15px;
 }
-.expense {
+.expense_txt {
   color: red;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.total {
-  color: cornflowerblue;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 15px;
   letter-spacing: 2px;
 }
-.debt {
+.debt_txt {
   color: darkkhaki;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   letter-spacing: 2px;
+  margin: 15px;
 }
-.button_grp {
-  display: flex;
-  justify-content: center;
-  width: 65%;
-  gap: 5%;
+.total_txt {
+  color: cornflowerblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  margin: 15px;
 }
-.button_link {
-  display: flex;
-  justify-content: space-evenly;
-  width: 25%;
-  border-radius: 100%;
+.inc_button,
+.exp_button,
+.debt_button {
+  padding: 11px;
+  border-radius: 10px;
+  width: 160px;
 }
-.income_button {
-  background-color: lightsalmon;
+.inc_button {
+  outline: 1px solid greenyellow;
+  background-color: #212529;
+  color: greenyellow;
 }
-.income_button:hover {
-  border: 1px solid greenyellow;
-  box-shadow: 0 0 5px greenyellow, 0 0 10px greenyellow, 0 0 20px greenyellow,
-    0 0 30px greenyellow;
+.inc_button:hover {
+  outline: none;
+  background-color: greenyellow;
+  color: black;
 }
-.income_button:active {
-  border: 2px solid green;
-  box-shadow: 0 0 10px green, 0 0 20px green, 0 0 40px green, 0 0 60px green;
+.exp_button {
+  outline: 1px solid red;
+  background-color: #212529;
+  color: red;
 }
-.expense_button {
-  background-color: lightgreen;
-}
-.expense_button:hover {
-  border: 1px solid orange;
-  box-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 20px orange, 0 0 30px orange;
-}
-.expense_button:active {
-  border: 2px solid red;
-  box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 60px red;
+.exp_button:hover {
+  outline: none;
+  background-color: red;
+  color: black;
 }
 .debt_button {
-  background-color: lightskyblue;
+  outline: 1px solid darkkhaki;
+  background-color: #212529;
+  color: darkkhaki;
 }
 .debt_button:hover {
-  border: 1px solid yellow;
-  box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+  outline: none;
+  background-color: darkkhaki;
+  color: black;
 }
-.debt_button:active {
-  border: 2px solid darkkhaki;
-  box-shadow: 0 0 10px darkkhaki, 0 0 20px darkkhaki, 0 0 40px darkkhaki,
-    0 0 60px darkkhaki;
+.inc_button_2,
+.exp_button_2,
+.debt_button_2 {
+  padding: 11px;
+  border-radius: 100%;
+  width: 50px;
+  display: none;
 }
 @media screen and (max-width: 600px) {
   .logo {
@@ -118,7 +120,7 @@ nav {
   .expense,
   .total,
   .debt {
-    width: 60%;
+    /* width: 60%; */
     font-size: 13px;
     padding-left: 10px;
     border: 0.5px solid cornsilk;
@@ -131,7 +133,7 @@ nav {
     letter-spacing: 2px;
   }
   .expense {
-    color: orange;
+    color: red;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   .total {
@@ -145,13 +147,23 @@ nav {
       "Lucida Sans", Arial, sans-serif;
     letter-spacing: 2px;
   }
+  .inc_button,
+  .exp_button,
+  .debt_button {
+    display: none;
+  }
+  .inc_button_2,
+  .exp_button_2,
+  .debt_button_2 {
+    display: block;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 1100px) {
   .income,
   .expense,
   .total,
   .debt {
-    width: 60%;
+    /* width: 60%; */
     font-size: 18px;
     padding-left: 10px;
     border: 0.5px solid cornsilk;
@@ -164,7 +176,7 @@ nav {
     letter-spacing: 2px;
   }
   .expense {
-    color: orange;
+    color: red;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   .total {
