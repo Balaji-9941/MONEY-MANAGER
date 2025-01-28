@@ -75,32 +75,32 @@ nav {
   width: 160px;
 }
 .inc_button {
-  outline: 1px solid greenyellow;
+  border: 1px solid greenyellow;
   background-color: #212529;
   color: greenyellow;
 }
 .inc_button:hover {
-  outline: none;
+  border: none;
   background-color: greenyellow;
   color: black;
 }
 .exp_button {
-  outline: 1px solid red;
+  border: 1px solid red;
   background-color: #212529;
   color: red;
 }
 .exp_button:hover {
-  outline: none;
+  border: none;
   background-color: red;
   color: black;
 }
 .debt_button {
-  outline: 1px solid darkkhaki;
+  border: 1px solid darkkhaki;
   background-color: #212529;
   color: darkkhaki;
 }
 .debt_button:hover {
-  outline: none;
+  border: none;
   background-color: darkkhaki;
   color: black;
 }
@@ -110,42 +110,53 @@ nav {
   padding: 11px;
   border-radius: 100%;
   width: 50px;
+  border: none;
   display: none;
+}
+.inc_button_2 {
+  border: 1px solid greenyellow;
+  background-color: #212529;
+  color: greenyellow;
+}
+.inc_button_2:hover {
+  border: none;
+  background-color: greenyellow;
+  color: black;
+}
+.exp_button_2 {
+  border: 1px solid red;
+  background-color: #212529;
+  color: red;
+}
+.exp_button_2:hover {
+  border: none;
+  background-color: red;
+  color: black;
+}
+.debt_button_2 {
+  border: 1px solid darkkhaki;
+  background-color: #212529;
+  color: darkkhaki;
+}
+.debt_button_2:hover {
+  border: none;
+  background-color: darkkhaki;
+  color: black;
+}
+.info_txt {
+  font-size: 20px;
+}
+.input_box {
+  height: 35px;
+  width: 280px;
+  margin: 6px;
+}
+.modal_height {
+  height: max-content;
 }
 @media screen and (max-width: 600px) {
   .logo {
     height: 35px;
-  }
-  .income,
-  .expense,
-  .total,
-  .debt {
-    /* width: 60%; */
-    font-size: 13px;
-    padding-left: 10px;
-    border: 0.5px solid cornsilk;
-    box-shadow: 0 0 2px cornsilk, 0 0 4px cornsilk, 0 0 8px cornsilk,
-      0 0 14px cornsilk;
-  }
-  .income {
-    color: chartreuse;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 2px;
-  }
-  .expense {
-    color: red;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .total {
-    color: cornflowerblue;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 2px;
-  }
-  .debt {
-    color: darkkhaki;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    letter-spacing: 2px;
   }
   .inc_button,
   .exp_button,
@@ -159,37 +170,6 @@ nav {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1100px) {
-  .income,
-  .expense,
-  .total,
-  .debt {
-    /* width: 60%; */
-    font-size: 18px;
-    padding-left: 10px;
-    border: 0.5px solid cornsilk;
-    box-shadow: 0 0 2px cornsilk, 0 0 4px cornsilk, 0 0 8px cornsilk,
-      0 0 14px cornsilk;
-  }
-  .income {
-    color: chartreuse;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 2px;
-  }
-  .expense {
-    color: red;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .total {
-    color: cornflowerblue;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 2px;
-  }
-  .debt {
-    color: darkkhaki;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    letter-spacing: 2px;
-  }
 }
 .c {
   color: darkkhaki;
