@@ -20,6 +20,39 @@
     <title>Money manager</title>
   </head>
   <body onload="loadInitial()">
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Income</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body modal_height">
+            <span class="info_txt">Amount: </span>
+            <input id="inc_amount" class="input_box mx-3" type="number" /><br />
+            <span class="info_txt">Date: </span>
+            <input id="inc_date" class="input_box mx-5" type="date" />
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="inc_button" onclick="handlesubmit()">
+              Add Income
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
